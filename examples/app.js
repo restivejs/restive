@@ -21,13 +21,13 @@ db.sync();  // create or update database schema
 /**
  * api
  */
-db('user').where(opts).find(columns).then(users) // or findOne()
+db('user').find(options).then(users) // or findOne()
 db('user').create(data).then(user)  // data maybe {} or []
-db('user').where(opts).update(data).then(count)
-db('user').where(opts).remove().then(count)
+db('user').update(data, options).then(count)
+db('user').remove(options).then(count)
 
 /**
- * query
+ * options query
  * $limit, $offset, $sort, $select, $include
  * 
 { include: 'role' }
