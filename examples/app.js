@@ -28,7 +28,7 @@ db('user').remove(options).then(count)
 
 /**
  * options query
- * $limit, $offset, $sort, $select, $include
+ * $limit, $offset, $order, $select, $include
  * 
 { include: 'role' }
 { include: ['user', 'role'] }
